@@ -13,9 +13,9 @@ namespace polyclinic
 
             Console.Write("Введите длину очереди:");
             old_ladies = Convert.ToInt32(Console.ReadLine());
-            time_hour = (old_ladies * time_work)/60;
-            time_minute = (old_ladies * time_work) - (time_hour*60);
-            Console.Write("Время ожидания в очереди " + time_hour + " часов и " + time_minute + " минут" );
+            time_hour = (old_ladies * time_work) / 60;
+            time_minute = (old_ladies * time_work) % 60;
+            Console.Write("Время ожидания в очереди " + time_hour + " часов и " + time_minute + " минут");
 
 
         }
